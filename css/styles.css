@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+:root
+{
+    --primary-color: #f95013;
+    --secondary-color: #2dc4fa;
+    --text-color: #ffffff;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: inherit;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.15),
+    5px 5px 15px rgba(0, 0, 0, 0.15),
+    -5px -5px 15px rgba(255, 255, 255, 0.15);
+}
+
+.card-content
+{
+    position: absolute;
+    inset: 5px;
+    background: var(--secondary-color);
+    border-radius: 35px;
+    transition: 0.5s;
+}
+
+.card-content:hover
+{
+    transform: translate(40px, -40px);
+    box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card-text-wrap 
+{
+    position: inherit;
+    inset: 10%;
+    color: var(--text-color);
+}
+
+h3 
+{
+    text-decoration: underline solid var(--text-color);
+    text-underline-offset: .8em;
+}
+
+p
+{
+    margin-top: 10%;
+}
